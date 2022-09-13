@@ -1,0 +1,39 @@
+
+
+.middle{
+  padding: 33px;
+    text-align: center;
+}
+
+@media screen and (min-width:760px){
+  .heading{
+    text-align: left;
+    padding: 56px;
+    width: 34%;
+  }
+  
+  .reasons{
+  display: flex;
+  }
+  
+  .online-banking{
+  padding: 34px;
+  width: 35%;
+  }
+  
+  .simple-budgeting{
+  padding: 34px;
+  width: 35%;
+  }
+  
+  .fast-onboarding{
+  padding: 34px;
+  width: 35%;
+  }
+  
+  .api{
+  padding: 34px;
+  width: 35%;
+  }
+}
+

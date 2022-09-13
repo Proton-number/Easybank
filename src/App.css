@@ -1,0 +1,118 @@
+*::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body{
+  font-size: 12px;
+  background-image: url('/src/images/bg-intro-mobile.svg');
+  
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+  
+}
+
+
+
+.logo-menu{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: red;
+  position: fixed;
+top: 0;
+left: 0;
+right: 0;
+  /* position: relative; */
+}
+
+.Mockup{
+  display: flex;
+  justify-content: center;
+}
+
+.Mockup img{
+  width: 78%;
+}
+
+nav{
+  display: none;
+}
+
+
+#top-btn{
+  display: none;
+}
+
+.words{
+  text-align: center;
+  padding: 33px;
+}
+
+@media screen and (min-width:760px){
+
+  body{
+    background-image: url('/src/images/bg-intro-desktop.svg');
+    background-repeat: no-repeat;
+      background-size: 58%;
+      background-position: 63em -5em;
+  }
+
+  .logo-menu{
+    justify-content: space-around;
+    padding: 5px;
+  }
+
+  .logo-menu img{
+    width: 15%;
+  }
+
+  nav{
+    display: block;
+  }
+
+  #top-btn{
+    display: block;
+  }
+
+  ul{
+    display: flex;
+    list-style: none;
+  }
+li{
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.menu{
+  display: none;
+}
+
+.Mockup{
+
+  display: flex;
+  justify-content: right;
+}
+
+.Mockup img{
+  width: 440px;
+  height: 554px;
+}
+
+.words{
+  width: 24%;
+  position: absolute;
+  top: 112px;
+  left: 72px;
+  z-index: -1;
+  text-align: left;
+  padding: 33px;
+}
+
+.words p{
+  font-size: 17px;
+}
+
+}

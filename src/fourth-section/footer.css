@@ -1,0 +1,29 @@
+
+.footer{
+    text-align: center;
+}
+
+.social-medias{
+        grid-gap: 15px;
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+}
+
+@media screen and (min-width:760px) {
+    
+    .footer{
+        display: flex;
+       justify-content: space-around;
+       align-items: baseline;
+    }
+
+    .others{
+        display: flex;
+    }
+   
+    #little-margin{
+        margin-left: 30px;
+    }
+
+}

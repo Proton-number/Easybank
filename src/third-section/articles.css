@@ -1,0 +1,67 @@
+
+
+.articles{
+    text-align: center;
+}
+
+.receive img{
+    width: 88%;
+}
+
+
+.treat-yourself img{
+    width: 88%;
+}
+
+
+.wherever img{
+    width: 88%;
+}
+
+
+.invite-only img{
+    width: 88%;
+}
+
+.read{
+    padding: 30px;
+    text-align: left;
+}
+
+@media screen and (min-width:760px) {
+
+    .articles h1{
+            text-align: left;
+            padding: 58px;
+    }
+
+    .article{
+        display: flex;
+        padding: 25px;
+    }
+
+    .receive img{
+        width: 69%;
+    }
+    
+    
+    .treat-yourself img{
+        width: 78%;
+    }
+    
+    
+    .wherever img{
+        width: 78%;
+    }
+    
+    
+    .invite-only img{
+        width: 78%;
+    }
+    
+.read{
+    padding: 52px;
+    width: 63%;
+}
+
+}
