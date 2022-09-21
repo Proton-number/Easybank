@@ -4,18 +4,28 @@ import online from '/src/images/icon-online.svg'
 import onboarding from '/src/images/icon-onboarding.svg'
 import api from '/src/images/icon-api.svg'
 import budgeting from '/src/images/icon-budgeting.svg'
+import {motion} from 'framer-motion'
 
 function Middle() {
   return (
    <>
-    <div className='middle'>
+    <div  className='middle'>
       
-      <div className="heading">
+      <motion.div 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration:0.5}}
+      className="heading">
         <h1>Why choose Easybank?</h1>
         <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
-      </div>
+      </motion.div>
 
-     <div className="reasons">
+     <motion.div 
+       initial={{opacity:0}}
+       whileInView={{opacity:1}}
+       transition={{duration:0.5}}
+     className="reasons">
+      
      <div className="online-banking">
         <img src={online} alt="online logo" />
         <h2>Online Banking</h2>
@@ -39,7 +49,7 @@ function Middle() {
         <h2>Open API</h2>
         <p>Manage your savings, investments, pension, and much more from one account.Tracking your money has never been easier.</p>
         </div>
-     </div>
+     </motion.div>
 
       </div>
    </>
