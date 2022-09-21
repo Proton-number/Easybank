@@ -2,12 +2,13 @@
 
 .nav{
 text-align: center;
-background-color: #42719b;
+background-color: hsl(0, 0%, 32%);;
 
 position: fixed;
 top: 0px;
 line-height: 3.5em;
 width: 100%;
+color: white;
 }
 
 .main{
@@ -16,6 +17,17 @@ width: 100%;
     align-items: baseline;
 }
 
+.main h1{
+    margin-left: 110px;
+}
+
+.navigation p {
+    opacity: 100%;
+}
+
+#close{
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(225deg) brightness(111%) contrast(101%);
+}
 
 
 

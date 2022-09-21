@@ -4,29 +4,27 @@
   box-sizing: border-box;
 } 
 
-body{
+
+
+.top{
   font-size: 12px;
   background-image: url('/src/images/bg-intro-mobile.svg');
-  
-  background-repeat: no-repeat;
-
-  background-size: 100%;
-  
+ background-repeat: no-repeat;
+ background-size: 100% ;
 }
-
-
 
 .logo-menu{
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  background-color: red;
+  background-color: hsl(0, 0%, 100%);
   position: fixed;
 top: 0;
 left: 0;
 right: 0;
-  /* position: relative; */
 }
+
+
 
 .Mockup{
   display: flex;
@@ -34,7 +32,8 @@ right: 0;
 }
 
 .Mockup img{
-  width: 78%;
+  width: 290px;
+height: 378px;
 }
 
 nav{
@@ -53,7 +52,8 @@ nav{
 
 @media screen and (min-width:760px){
 
-  body{
+ 
+  .top{
     background-image: url('/src/images/bg-intro-desktop.svg');
     background-repeat: no-repeat;
       background-size: 58%;
@@ -63,6 +63,7 @@ nav{
   .logo-menu{
     justify-content: space-around;
     padding: 5px;
+    height: 35px;
   }
 
   .logo-menu img{
@@ -71,6 +72,7 @@ nav{
 
   nav{
     display: block;
+    margin-top: -5px;
   }
 
   #top-btn{
@@ -102,7 +104,7 @@ li{
 }
 
 .words{
-  width: 24%;
+  width: 35%;
   position: absolute;
   top: 112px;
   left: 72px;

@@ -26,9 +26,69 @@
 .read{
     padding: 30px;
     text-align: left;
+    margin: auto;
+background-color: white;
+   
 }
 
+.receive{
+    margin-bottom: 22px;
+}
+
+.receive .read{
+    width: 50%;
+}
+
+.receive img{
+width: 64%;
+}
+
+.treat-yourself{
+    margin-bottom: 22px;
+}
+
+.treat-yourself .read{
+    width: 50%;
+}
+
+.treat-yourself img{
+    width: 64%;
+
+}
+
+.wherever{
+    margin-bottom: 22px;
+}
+
+.wherever .read{
+    width: 50%;
+}
+
+.wherever img{
+    width: 64%;
+
+}
+
+.invite-only{
+    margin-bottom: 22px;
+}
+
+.invite-only .read{
+    width: 50%;
+}
+
+.invite-only img{
+    width: 64%;
+
+}
+
+
 @media screen and (min-width:760px) {
+
+
+    .articles{
+        margin-right: 50px;
+    }
 
     .articles h1{
             text-align: left;
@@ -38,30 +98,89 @@
     .article{
         display: flex;
         padding: 25px;
+       margin-left: 50px;
+    }
+
+    .receive{
+        margin-top: -5px;
     }
 
     .receive img{
-        width: 69%;
+        width: 81%;
+        margin-right: 2px;
+    }
+
+    .receive .read{
+        padding: 44px;
+width: 54%;
+height: 335px;
+background-color: white;
     }
     
+    .treat-yourself{
+        margin-top: -6px;
+    }
     
     .treat-yourself img{
-        width: 78%;
+        width: 87%;
+        height: 193px;
+        margin-right: 4px;
+    }
+
+    .treat-yourself .read{
+        padding: 50px;
+width: 57%;
+height: 316px;
+background-color: white;
+
     }
     
+    .wherever{
+        margin-top: -8px;
+    }
     
     .wherever img{
-        width: 78%;
+        width: 87%;
+        height: 196px ;
+margin-right: 2px;
+    }
+
+    .wherever .read{
+        padding: 52px;
+        width: 56%;
+        height: 309px;
+background-color: white;
+
     }
     
+    .invite-only{
+        margin-top: -10px;
+    }
     
     .invite-only img{
-        width: 78%;
+        width: 84%;
+        height: 198px;
+        margin-right: 3px;
+    }
+
+    .invite-only .read{
+        padding: 43px;
+        width: 57%;
+background-color: white;
+  height: 326px;
     }
     
-.read{
+/* .read{
     padding: 52px;
     width: 63%;
+} */
+
+.read h2{
+    font-size: 22px ;
+}
+
+.read p, h4{
+    font-size: 14px;
 }
 
 }

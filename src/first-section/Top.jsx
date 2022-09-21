@@ -6,6 +6,17 @@ import Mobileintro from '/src/images/bg-intro-mobile.svg'
 import Desktopintro from '/src/images/bg-intro-desktop.svg'
 import mockUp from '/src/images/image-mockups.png'
 
+
+const ScaleVariant = {
+  hover:{
+  scale:1.1
+  },
+  scale:{
+    scale:1.3
+  }
+}
+
+
 function Top({setDisplay}) {
 
 
@@ -22,33 +33,58 @@ function Top({setDisplay}) {
  
    <nav id='navigation'>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Careers</li>
+        <motion.li
+         variants={ScaleVariant}
+  whileHover='hover'
+        >Home</motion.li>
+
+        <motion.li
+        variants={ScaleVariant}
+        whileHover='hover'
+        >About</motion.li>
+
+        <motion.li
+        variants={ScaleVariant}
+        whileHover='hover'
+        >Contact</motion.li>
+
+        <motion.li
+       variants={ScaleVariant}
+       whileHover='hover'
+        >Blog</motion.li>
+
+        <motion.li
+variants={ScaleVariant}
+  whileHover='hover'
+        >Careers</motion.li>
       </ul>
      </nav>
   
   
       
 
-  <button id='top-btn'>Request Invite</button>
-      <img src={hamburger} onClick={()=>setDisplay(true)} className='menu' alt="hamburger menu" />
+  <motion.button
+  variants={ScaleVariant}
+  whileHover='hover'
+   id='top-btn'>Request Invite</motion.button>
+      <motion.img variants={ScaleVariant} whileHover='scale' src={hamburger} onClick={()=>setDisplay(true)} className='menu' alt="hamburger menu" />
      </div>
 
       <div className='Mockup'>
      
-        <img src={mockUp}  alt=""  />
+        <img  src={mockUp}  alt=""  />
       </div>
 
-      <div className="words">
+      <motion.div 
+      initial={{opacity:0}}
+      animate={{opacity:1}}
+      className="words">
         <h1>Next generation digital banking</h1>
     
        <p>Take your finances life online. Your Easybank account will be a one-step-shop for spending,saving,budgeting,investing and much more.</p>
   
         <button>Request Invite</button>
-      </div>
+      </motion.div>
 
 
 

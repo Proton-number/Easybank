@@ -3,9 +3,22 @@
 .middle{
   padding: 33px;
     text-align: center;
+    background-color: hsl(0, 0%, 87%);
+
 }
 
 @media screen and (min-width:760px){
+
+  .middle{
+    background-color: hsl(0, 0%, 87%);
+    margin-top: 80px;
+  }
+
+  .middle p{
+    font-size: 16px;
+  }
+
+
   .heading{
     text-align: left;
     padding: 56px;
